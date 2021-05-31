@@ -62,7 +62,7 @@ function Navbar(props) {
                             </MDBNavbarItem>
                             <MDBBtn rounded className='mx-2' style={{ backgroundColor: "#dd003f" }}>
                                 SIGNUP
-                        </MDBBtn>
+                            </MDBBtn>
                         </MDBNavbarNav>
                     </MDBNavbarNav>
                 </MDBCollapse>

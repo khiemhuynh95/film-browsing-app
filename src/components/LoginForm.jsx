@@ -11,8 +11,11 @@ import {
 
 function LoginForm(props) {
     return (
-        <div onClick={() => { props.onCloseLoginForm() }}>
-            <MDBModal show={true} tabIndex='-1'>
+        <div onClick={() => {
+            //close the modal when clicked outside the content
+            props.onCloseLoginForm()
+        }}>
+            <MDBModal className='modal-container' show={true} tabIndex='-1'>
                 <MDBModalDialog className='modal-dialog'>
                     <MDBModalContent onClick={e => {
                         // do not close modal if anything inside modal content is clicked
