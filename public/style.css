@@ -1,0 +1,18 @@
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#root-navbar {
+    margin-top: 20px;
+}
+
+
+.modal-container {
+    display: flex;
+    
+}
+
+.modal-dialog{
+    margin: auto;
+}
+
