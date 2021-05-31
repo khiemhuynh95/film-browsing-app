@@ -12,9 +12,12 @@ import {
 function LoginForm(props) {
     return (
         <div onClick={() => { props.onCloseLoginForm() }}>
-            <MDBModal className='modal-container' show={true} tabIndex='-1'>
+            <MDBModal show={true} tabIndex='-1'>
                 <MDBModalDialog className='modal-dialog'>
-                    <MDBModalContent>
+                    <MDBModalContent onClick={e => {
+                        // do not close modal if anything inside modal content is clicked
+                        e.stopPropagation();
+                    }}>
                         <MDBModalBody >
                             <h1 >LOGIN</h1>
                             <MDBInput label='Username' id='username' type='text' />
